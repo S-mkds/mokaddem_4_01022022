@@ -318,6 +318,11 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
+.text-center__partnair a{
+    text-decoration: none;
+    
+}
+
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
@@ -631,6 +636,13 @@ padding-bottom: 10px;
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+.partnair { 
+    text-decoration: none;
+}
+.col-sm-3 { 
+    padding-top: 1rem;
 }
 
 @media (max-width: 1024px) {
