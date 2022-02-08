@@ -39,10 +39,6 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
-}
 
 .bloc-lg {
     padding: 100px 50px;
@@ -155,19 +151,14 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
-}
+
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
 }
 
-.navbar-toggle:hover {
-    background: transparent!important;
-}
+
 
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
@@ -193,10 +184,7 @@ a:hover {
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
+    
     .nav-invert .site-navigation {
         left: 0;
         right: 0;
@@ -469,7 +457,8 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    padding-top: 1rem;
+    color: rgb(51, 51, 51) !important;
 }
 
 .container {
@@ -544,9 +533,15 @@ h1 {
 h4 {
     color: #333333!important;
 }
+.text-center { 
+    margin: 2rem;
+}
+
 
 .text-center__citation { 
     font-style: italic;
+    border-left: 5px solid rgb(238, 238, 238);
+    margin: 2rem;
 }
 
 .icons {
@@ -557,7 +552,6 @@ h4 {
 .font {
    
     font-weight: 600;
-    font-size: small;
 }
 
 .portfolio-thumb {
@@ -569,7 +563,9 @@ h4 {
     margin-bottom: 44px;
     margin-top: 50px;
 }
-
+.row project h2 { 
+    background-color: #c27956;
+}
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
@@ -582,7 +578,6 @@ h4 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
 }
 
 .bgc-white {
@@ -627,9 +622,6 @@ padding-bottom: 10px;
 }
 
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
@@ -646,6 +638,18 @@ padding-bottom: 10px;
     padding-top: 1rem;
 }
 
+.col-sm-6 p { 
+
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+.col-sm-6 text-info { 
+        display: flex !important;
+        justify-content: center !important;
+        padding-bottom: 2rem !important;
+        padding-top: 15rem !important;
+    }
 @media (max-width: 1024px) {
 
     .bloc.full-width-bloc,
@@ -665,6 +669,14 @@ padding-bottom: 10px;
         max-width: 100%
     }
 }
+@media (max-width: 768px) { 
+    .portfolio-thumb { 
+        padding-right: 5rem;
+        padding-left: 5rem;
+        margin: 1;
+    }
+}
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
@@ -743,9 +755,6 @@ padding-bottom: 10px;
         text-align: left;
         padding-left: 15px;
         width: 100%;
-    }
-    .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
         float: none;

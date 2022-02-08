@@ -1623,9 +1623,7 @@ h6 {
     font-size: 12px
 }
 
-p {
-    margin: 0 0 10px
-}
+
 
 .lead {
     margin-bottom: 20px;
@@ -2016,10 +2014,10 @@ pre code {
     margin-right: -15px;
     margin-left: -15px;
 }
-.project {
-    overflow: hidden;
+.__project {
+   
     background-color: #f3976c;
-    padding: 2rem;
+    
 }
 
 .col-lg-1,
@@ -2331,6 +2329,7 @@ pre code {
     .col-sm-6 {
         width: 50%
     }
+    
     .col-sm-5 {
         width: 41.66666667%
     }
