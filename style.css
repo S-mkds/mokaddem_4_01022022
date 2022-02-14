@@ -151,7 +151,9 @@ a:hover {
     text-align: inherit;
 }
 
-
+a:hover {
+    transform: scale(1.02); 
+}
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -327,9 +329,6 @@ button {
     transition: all .3s ease-in-out;
 }
 
-.scrollToTop span {
-    margin-top: 6px;
-}
 
 .showScrollTop {
     font-size: 14px;
@@ -508,6 +507,7 @@ a {
     margin: auto auto auto auto;
 }
 
+
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -534,13 +534,12 @@ h4 {
     color: #333333!important;
 }
 .text-center { 
-    margin: 2rem;
+    margin: 0.5rem;
 }
 
 
 .text-center__citation { 
     font-style: italic;
-    border-left: 5px solid rgb(238, 238, 238);
     margin: 2rem;
 }
 
@@ -589,7 +588,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #f3976c8c;
 }
 
 .btn-atomic-tangerine {
@@ -602,7 +601,7 @@ h4 {
     color: #F3976C!important;
 }
 .tight-width-background { 
-background-color: #f3976c;
+background-color: #f3976c8c;
 padding-top: 10px;
 padding-bottom: 10px;
 
@@ -633,9 +632,6 @@ padding-bottom: 10px;
 
 .partnair { 
     text-decoration: none;
-}
-.col-sm-3 { 
-    padding-top: 1rem;
 }
 
 .col-sm-6 p { 
@@ -673,50 +669,13 @@ padding-bottom: 10px;
     .portfolio-thumb { 
         padding-right: 5rem;
         padding-left: 5rem;
-        margin: 1;
     }
 }
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
 
-@media (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .page-container,
-    #hero-bloc {
-        overflow-x: hidden;
-        position: relative;
-    }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-    .bloc-group,
-    .bloc-group .bloc {
-        display: block;
-        width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-}
+
 
 @media (max-width: 767px) {
     .page-container {
